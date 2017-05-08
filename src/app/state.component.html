@@ -1,0 +1,399 @@
+<div class="form-signin state">
+      		<h2 class="form-signin-heading">Current time</h2>
+      		<p class="time" id="currentTime">{{aquarioData?.currentTime}}</p>
+
+			<h2 class="form-signin-heading">Current date</h2>
+      		<p class="time" id="currentDate">{{aquarioData?.currentDate}}</p>
+
+			<h2 class="form-signin-heading">Current day</h2>
+      		<p class="time" id="currentDay">{{aquarioData?.currentDay}}</p>
+      	</div>
+
+		<div class="form-signin state">
+      		<h2 class="form-signin-heading">Current tank temperature</h2>
+      		<p class="time" id="tankTemp">{{aquarioData?.currentTankTemp}}</p>
+      	</div>
+
+<div class="form-signin state">
+      		<h2 class="form-signin-heading">Current lights schedule</h2>
+      		<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Monday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="monLightsST1">{{aquarioData?.currentLightsSchedule[0].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="monLightsET1">{{aquarioData?.currentLightsSchedule[0].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="monLightsST2">{{aquarioData?.currentLightsSchedule[0].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="monLightsET2">{{aquarioData?.currentLightsSchedule[0].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Tuesday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="tueLightsST1">{{aquarioData?.currentLightsSchedule[1].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="tueLightsET1">{{aquarioData?.currentLightsSchedule[1].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="tueLightsST2">{{aquarioData?.currentLightsSchedule[1].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="tueLightsET2">{{aquarioData?.currentLightsSchedule[1].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Wednesday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="wedLightsST1">{{aquarioData?.currentLightsSchedule[2].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="wedLightsET1">{{aquarioData?.currentLightsSchedule[2].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="wedLightsST2">{{aquarioData?.currentLightsSchedule[2].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="wedLightsET2">{{aquarioData?.currentLightsSchedule[2].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Thursday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="thurLightsST1">{{aquarioData?.currentLightsSchedule[3].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="thurLightsET1">{{aquarioData?.currentLightsSchedule[3].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="thurLightsST2">{{aquarioData?.currentLightsSchedule[3].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="thurLightsET2">{{aquarioData?.currentLightsSchedule[3].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Friday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="friLightsST1">{{aquarioData?.currentLightsSchedule[4].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="friLightsET1">{{aquarioData?.currentLightsSchedule[4].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="friLightsST2">{{aquarioData?.currentLightsSchedule[4].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="friLightsET2">{{aquarioData?.currentLightsSchedule[4].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Saturday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="satLightsST1">{{aquarioData?.currentLightsSchedule[5].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="satLightsET1">{{aquarioData?.currentLightsSchedule[5].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="satLightsST2">{{aquarioData?.currentLightsSchedule[5].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="satLightsET2">{{aquarioData?.currentLightsSchedule[5].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Sunday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p id="sunLightsST1">{{aquarioData?.currentLightsSchedule[6].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p id="sunLightsET1">{{aquarioData?.currentLightsSchedule[6].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p id="sunLightsST2">{{aquarioData?.currentLightsSchedule[6].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p id="sunLightsET2">{{aquarioData?.currentLightsSchedule[6].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+      	</div>
+
+<div class="form-signin state">
+      		<h2 class="form-signin-heading">Current Co2 schedule</h2>
+      		<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Monday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[0].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[0].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[0].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[0].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Tuesday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[1].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[1].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[1].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[1].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Wednesday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[2].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[2].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[2].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[2].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Thursday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[3].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[3].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[3].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[3].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Friday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[4].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[4].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[4].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[4].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Saturday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[5].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[5].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[5].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[5].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Sunday:</h3>
+  				</div>
+  				<div class="panel-body">
+    				<div class="schedule-container">
+    					<div class="schedule-time float-left">
+    						<h5>Start time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[6].firstStartTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>End time 1</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[6].firstStopTime}}</p>
+    					</div>
+    					<div class="schedule-time float-left">
+    						<h5>Start time 2</h5>
+	    					<p>{{aquarioData?.currentCo2Schedule[6].secondStartTime}}</p>
+	    				</div>
+	    				<div class="schedule-time float-left">
+    						<h5>End time 2</h5>
+    						<p>{{aquarioData?.currentCo2Schedule[6].secondStopTime}}</p>
+    					</div>
+    				</div>
+  				</div>
+  				<div class="clear"></div>
+			</div>
+</div>

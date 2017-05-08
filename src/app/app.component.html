@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<div class="header">
+		<img src="../assets/logo.png" alt="Aquario" title="Aquario">
+		<ul>
+			<li><a routerLink="/state">State</a></li>
+			<li><a routerLink="/settings">Settings</a></li>
+		</ul>
+		<router-outlet></router-outlet>
+	</div>
