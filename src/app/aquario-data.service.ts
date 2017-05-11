@@ -15,9 +15,9 @@ export class AquarioDataService {
 
   getAquarioData(): Promise<AquarioData[]> {
     return this.http.get(this.aquarioDataUrl)
-               .toPromise()
-               .then(response => response.json().data as AquarioData[])
-               .catch(this.handleError);
+              .toPromise()
+              .then(response => {return response.json() as AquarioData[];})
+              .catch(this.handleError);
   }
 
   private handleError(error: any): Promise<any> {
@@ -33,3 +33,4 @@ Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */
+
